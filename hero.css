@@ -72,3 +72,10 @@
 /* Heading above India statistics. */
 .stats>h2{grid-column:1/-1;text-align:center;color:var(--brand);font-size:32px;line-height:40px;margin:0 0 16px}
 @media(max-width:650px){.stats>h2{font-size:26px;line-height:34px}}
+
+/* Scale the quote card with the hero width, while preserving the reference size on wide screens. */
+.hero-quote{width:clamp(280px,20vw,400px)}
+@media(max-width:700px){.hero-quote{width:min(290px,calc(100% - 44px))}}
+/* Keep the spacing around the India statistics consistent with the section rhythm. */
+.stats{margin-bottom:-32px}
+@media(max-width:650px){.stats{margin-bottom:-8px}}
