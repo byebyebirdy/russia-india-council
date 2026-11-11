@@ -12,7 +12,8 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let paused = false;
   let visible = true;
-  let scene = 0;
+  let scene = Number(hero.dataset.scene) || 0;
+
 
   function selectScene(index) {
     scene = (index + scenes.length) % scenes.length;
@@ -40,3 +41,4 @@
   controls.hidden = false;
   update();
 })();
+
