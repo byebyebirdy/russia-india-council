@@ -17,3 +17,12 @@ dialog{width:min(640px,calc(100% - 32px));max-height:85vh;border:0;border-radius
 @media(max-width:1000px){.hero-content{padding-inline:32px}.hero h1{font-size:46px;line-height:54px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:650px){.brand{font-size:11px;gap:8px}.brand>span{max-width:180px;line-height:16px}.hero{height:620px}.hero-content{padding:0;margin:48px 20px 0}.hero h1{font-size:clamp(28px,7.6vw,42px);line-height:1.16;overflow-wrap:normal;hyphens:manual}.hero .intro{max-width:360px}.stats{margin-top:20px;gap:12px}.stat,.stat:nth-child(-n+2){border-radius:20px;padding:20px 10px;min-height:148px}.stat .stat-value{line-height:40px;letter-spacing:-1px}.stat .stat-number,.stat strong{font-size:30px}.stat p .stat-unit{font-size:15px;margin-left:3px}.stat h2{font-size:12px;line-height:18px}.about-intro{padding-top:24px;padding-bottom:32px}.back-link{margin-bottom:32px}.about-intro h1{font-size:42px;line-height:50px}.about-description{font-size:17px;line-height:26px}.about-page .about{padding:32px 20px;border-radius:24px}.board-placeholder{padding:32px 20px}.board-label{font-size:22px;line-height:30px}.about-cta{padding-top:32px;padding-bottom:0}.about-cta .button{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+
+/* Application form opens in the shared modal instead of the home page. */
+#modal:has(.application-dialog){width:min(720px,calc(100% - 32px));max-height:88vh;overflow:auto}
+.application-modal-intro{margin:0 0 20px;color:var(--muted);font-size:15px;line-height:23px}
+.application-panel.application-dialog{display:block;padding:0;background:transparent;overflow:visible}
+.application-dialog form{width:100%;padding:24px}
+.application-dialog .flags,.application-dialog .application-copy{display:none}
+@media(max-width:650px){#modal:has(.application-dialog){padding:30px 18px}.application-dialog form{padding:20px 14px}}
