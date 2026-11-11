@@ -33,7 +33,7 @@ document.addEventListener('submit', event => {
   message.textContent = activeLanguage === 'ru' ? 'Форма заполнена корректно. Это визуальный прототип: ваши данные никуда не отправлены и не сохранены.' : 'The form is valid. This is a visual prototype: your information has not been sent or saved.';
   $('#modal-content').replaceChildren(message);
 });
-$('[data-open-application]').forEach(button => button.addEventListener('click', () => {
+$$('[data-open-application]').forEach(button => button.addEventListener('click', () => {
   closeMenu();
   const content = $('#application-template').content.cloneNode(true);
   if (activeLanguage === 'en') {
