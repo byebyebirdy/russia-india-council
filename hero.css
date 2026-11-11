@@ -44,3 +44,8 @@
 .hero-quote-index-value{font-size:21px;line-height:28px;font-variant-numeric:tabular-nums;white-space:nowrap}
 @media(max-width:1000px){.hero-quote{width:260px}}
 @media(max-width:700px){.hero-quote{width:min(100%,270px)}}
+
+/* Keep the market snapshot in the upper-right corner of the banner. */
+.hero-quote{position:absolute;z-index:1;top:56px;right:56px}
+@media(max-width:1250px){.hero-quote{top:40px;right:40px}}
+@media(max-width:700px){.hero-quote{top:22px;right:22px}}
