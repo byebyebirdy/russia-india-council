@@ -74,7 +74,7 @@
 @media(max-width:650px){.stats>h2{font-size:26px;line-height:34px;margin-bottom:24px}}
 
 /* Scale the quote card with the hero width, while preserving the reference size on wide screens. */
-.hero-quote{width:400px}
+.hero-quote{width:20.2%}
 @media(max-width:700px){.hero-quote{width:min(290px,calc(100% - 44px))}}
 /* Keep the spacing around the India statistics consistent with the section rhythm. */
 .stats{margin-bottom:-32px}
