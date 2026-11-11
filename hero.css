@@ -96,3 +96,16 @@
   #directions{padding-top:40px}
   #directions>h2{margin-bottom:40px}
 }
+
+
+/* Corrected: black-arrow gaps are larger than red-arrow gaps. */
+.stats{margin-top:64px;margin-bottom:-32px}
+.stats>h2{margin-bottom:32px}
+#directions{padding-top:96px}
+#directions>h2{margin-bottom:48px}
+@media(max-width:650px){
+  .stats{margin-top:40px;margin-bottom:-8px}
+  .stats>h2{margin-bottom:20px}
+  #directions{padding-top:48px}
+  #directions>h2{margin-bottom:32px}
+}
