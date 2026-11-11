@@ -61,3 +61,9 @@
 .hero-quote-note{margin:8px 0 0;font-size:13px;line-height:18px;opacity:.9}
 @media(max-width:1250px){.hero-quote{width:min(400px,calc(100% - 80px));padding:20px 22px}}
 @media(max-width:700px){.hero-quote{top:22px;right:22px;width:min(290px,calc(100% - 44px));padding:14px 16px;border-radius:18px}.hero-quote-rate span,.hero-quote-rate strong{font-size:18px;line-height:22px}.hero-quote-index{margin-top:8px;font-size:14px;line-height:20px}.hero-quote-note{margin-top:5px;font-size:11px}}
+
+/* Keep hero dimensions; scale quote text to match across both indicators. */
+.hero-quote-rate span,.hero-quote-rate strong{font-size:17px;line-height:22px}
+.hero-quote-index{font-size:17px;line-height:22px;margin-top:9px}
+.hero-quote-note{font-size:12px;line-height:16px;margin-top:6px}
+@media(max-width:700px){.hero-quote-rate span,.hero-quote-rate strong{font-size:15px;line-height:19px}.hero-quote-index{font-size:15px;line-height:19px}.hero-quote-note{font-size:11px;line-height:14px}}
