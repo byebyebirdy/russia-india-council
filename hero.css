@@ -49,3 +49,16 @@
 .hero-quote{position:absolute;z-index:1;top:56px;right:56px}
 @media(max-width:1250px){.hero-quote{top:40px;right:40px}}
 @media(max-width:700px){.hero-quote{top:22px;right:22px}}
+
+/* Warmer turquoise light flow and a compact market snapshot. */
+.hero-tint{background:#006b63}
+.hero-glow{background:radial-gradient(ellipse at 65% 55%,#a8f0da88,transparent 30%),linear-gradient(115deg,transparent 34%,#50dccd52 47%,transparent 56%);opacity:.82}
+.hero-shade{background:linear-gradient(90deg,#001b1a70,transparent 78%)}
+.hero-quote{width:min(400px,calc(100% - 112px));padding:22px 26px;border:1px solid #b8eee45c;border-radius:24px;background:linear-gradient(140deg,#248e83df,#005d59ed);backdrop-filter:blur(14px);box-shadow:0 16px 42px #001a1833;color:#fff}
+.hero-quote-rate,.hero-quote-index{display:flex;align-items:baseline;gap:8px;margin:0;white-space:nowrap}
+.hero-quote-rate span{font-size:18px;font-weight:600}
+.hero-quote-rate strong{font-size:28px;line-height:1.2;font-variant-numeric:tabular-nums}
+.hero-quote-index{margin-top:12px;font-size:17px;line-height:24px}
+.hero-quote-note{margin:8px 0 0;font-size:13px;line-height:18px;opacity:.9}
+@media(max-width:1250px){.hero-quote{width:min(400px,calc(100% - 80px));padding:20px 22px}}
+@media(max-width:700px){.hero-quote{top:22px;right:22px;width:min(290px,calc(100% - 44px));padding:14px 16px;border-radius:18px}.hero-quote-rate span{font-size:15px}.hero-quote-rate strong{font-size:21px}.hero-quote-index{margin-top:8px;font-size:14px;line-height:20px}.hero-quote-note{margin-top:5px;font-size:11px}}
