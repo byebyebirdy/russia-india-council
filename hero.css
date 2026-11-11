@@ -68,8 +68,6 @@
 .hero-quote-note{font-size:12px;line-height:16px;margin-top:6px}
 @media(max-width:700px){.hero-quote-rate span,.hero-quote-rate strong{font-size:15px;line-height:19px}.hero-quote-index{font-size:15px;line-height:19px}.hero-quote-note{font-size:11px;line-height:14px}}
 
-/* Match the wide desktop banner proportions from the reference. */
-@media(min-width:1101px){.hero.wrap{width:calc(100% - 64px);max-width:1940px}}
 
 /* Heading above India statistics. */
 .stats>h2{grid-column:1/-1;text-align:center;color:var(--brand);font-size:32px;line-height:40px;margin:0 0 -4px}
