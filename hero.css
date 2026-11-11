@@ -38,6 +38,7 @@
 @media(max-width:700px){.hero{height:auto;min-height:680px;margin-top:12px;border-radius:24px;padding:28px 24px 80px;display:flex;flex-direction:column;gap:28px}.hero-eyebrow{position:relative;inset:auto;max-width:none;font-size:11px;line-height:17px}.hero-topics{position:relative;inset:auto;width:100%;justify-content:flex-start;gap:6px}.hero-topics span{font-size:10px;line-height:14px;padding:6px 10px;backdrop-filter:blur(10px)}.hero .hero-content{position:relative;inset:auto;max-width:100%;margin-top:auto}.hero h1{font-size:clamp(26px,7.2vw,44px);letter-spacing:-.7px;line-height:1.14}.hero .intro{font-size:14px;line-height:22px;margin:20px 0 24px;max-width:420px}.hero .button{min-height:52px;padding:14px 28px;font-size:14px}.hero-controls{right:24px;bottom:20px}.hero-scenes button[aria-pressed="true"]{width:56px}.hero .hero-image{object-position:65% center}.hero-shade{background:linear-gradient(90deg,#00171f77,#00171f15)}.hero-camera{inset:-8%}.header{padding:12px 0}.header nav{top:64px}}
 @media(prefers-reduced-motion:reduce){.hero .hero-image,.hero-glow{animation:none}.hero-camera,.hero-scenes button,.hero-scenes button:before{transition:none}.motion-toggle{display:none}}
 
+
 /* Selectable hero motion concepts. */
 .hero-topics{display:none}
 .hero-controls{z-index:4;right:32px;bottom:28px;display:flex;align-items:center;gap:10px}
@@ -59,5 +60,16 @@
 @keyframes cinematic-zoom{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-1.3%,1%,0) scale(1.08)}}
 @keyframes contour-drift{from{transform:translate3d(-1%,-.5%,0) scale(.96)}to{transform:translate3d(1%,.5%,0) scale(1.04)}}
 @media(max-width:1000px){.hero-controls{right:20px;bottom:18px}.hero-scene-name{min-width:118px}}
-@media(max-width:700px){.hero-controls{right:12px;bottom:12px;gap:6px}.hero-slider{gap:6px;min-height:42px;padding:4px 8px}.hero-scene-name{min-width:104px;font-size:10px}.hero-arrow{width:24px;height:28px}.hero-scenes{gap:4px}.hero-scenes button{width:10px}.hero-scenes button[aria-pressed="true"]{width:22px}.motion-toggle{width:34px;height:34px}.hero .hero-image{object-position:65% center}}
-@media(prefers-reduced-motion:reduce){.hero[data-scene="2"] .hero-camera,.hero[data-scene="3"] .hero-glow{animation:none}}
+/* Quote card and warmer turquoise light-flow default. */
+.hero-tint{background:#208f86}
+.hero-glow{background:radial-gradient(ellipse at 65% 55%,#b9f2d76e,transparent 30%),linear-gradient(115deg,transparent 36%,#57d9c342 46%,transparent 54%)}
+.hero[data-scene="1"] .hero-glow{background:linear-gradient(105deg,transparent 34%,#a9edd900 41%,#63dfc39c 48%,#d4f5dc66 52%,transparent 59%)}
+.hero-quote{position:absolute;z-index:2;top:56px;right:56px;width:260px;padding:18px 20px;border:1px solid #ffffff45;border-radius:20px;background:linear-gradient(140deg,#ffffff24,#05263366);backdrop-filter:blur(18px);box-shadow:0 14px 40px #00182430;color:#fff}
+.hero-quote-label{display:block;margin-bottom:12px;font-size:12px;line-height:16px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#e7fff6}
+.hero-quote-rate{display:flex;align-items:baseline;gap:8px;font-size:20px;line-height:28px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hero-quote-rate strong{font-size:24px;line-height:30px;font-weight:700;letter-spacing:-.4px}
+.hero-quote-equals{color:#d9efe8}
+.hero-quote-note{margin-top:8px;font-size:11px;line-height:16px;color:#e3f3ef}
+@media(max-width:1250px){.hero-quote{top:40px;right:40px}}
+@media(max-width:1000px){.hero-quote{top:32px;right:32px;width:240px}.hero-quote-rate{font-size:18px}.hero-quote-rate strong{font-size:22px}}
+@media(max-width:700px){.hero-quote{position:relative;inset:auto;width:min(100%,250px);margin:0 0 0 auto;padding:14px 16px}.hero-quote-label{margin-bottom:6px}.hero-quote-rate{font-size:17px;line-height:24px}.hero-quote-rate strong{font-size:20px;line-height:26px}.hero-quote-note{margin-top:4px}}
