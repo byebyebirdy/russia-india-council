@@ -83,3 +83,16 @@
 /* Align the two section intervals and the two heading-to-card intervals. */
 .stats>h2{margin-bottom:16px}
 @media(max-width:650px){.stats{margin-top:32px}.stats>h2{margin-bottom:12px}}
+
+
+/* Spacing from review: black arrows 48px, red arrows 64px. */
+.stats{margin-top:48px;margin-bottom:-32px}
+.stats>h2{margin-bottom:48px}
+#directions{padding-top:80px}
+#directions>h2{margin-bottom:64px}
+@media(max-width:650px){
+  .stats{margin-top:32px;margin-bottom:-8px}
+  .stats>h2{margin-bottom:28px}
+  #directions{padding-top:40px}
+  #directions>h2{margin-bottom:40px}
+}
